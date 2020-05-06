@@ -1,0 +1,70 @@
+nav {
+  background-color: var(--background-color);
+  border-bottom: 1px dashed var(--inside-color);
+  font-family: Patua-One;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand,  .nav-link{
+    font-size: 15px;
+    color: var(--inside-color);
+    border-bottom: 3px solid var(--background-color);
+    padding-bottom: 1px;
+  }
+
+  .nav-link {
+    width: 35%;
+  }
+
+  .busqueda {
+    font-size: 15px;
+    width: 50%;
+  }
+
+  .navbar-brand:hover, .nav-link:hover{
+    color: var(--inside-color);
+    border-bottom: 3px solid var(--inside-color-2);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand, .nav-link {
+    font-size: 15px;
+    color: var(--inside-color);
+    border-left: 3px solid var(--background-color);
+    border-bottom: 3px solid var(--background-color);
+    border-top: 1px solid var(--background-color);
+    border-right: 1px solid var(--background-color);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+    transition: color 0.5s linear;
+    transition: border-left 0.5s linear, border-bottom 0.5s linear, border-right 0.5s linear, border-top 0.5s linear;
+  }
+
+  .navbar-brand:hover, .nav-link:hover{
+    color: var(--inside-color-2);
+    border-left: 3px solid var(--inside-color-2);/*34345E;*/
+    border-bottom: 3px solid var(--inside-color-2);
+    border-top: 1px solid var(--inside-color-2);
+    border-right: 1px solid var(--inside-color-2);
+  }
+  .dark-toggler {
+    position: absolute;
+    align-self: center;
+    margin-left: 45%;
+    margin-right: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.busqueda:focus {
+    border-color: var(--inside-color);
+    box-shadow: 0 0 0 0.2rem var(--inside-color);
+}
+
+.moon-icon, .menu-icon {
+  width: 30px;
+}

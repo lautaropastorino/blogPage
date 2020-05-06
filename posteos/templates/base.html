@@ -1,0 +1,20 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>BlogPage</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+  </head>
+  <body>
+    {% include "nav.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "footer.html" %}
+  </body>
+</html>

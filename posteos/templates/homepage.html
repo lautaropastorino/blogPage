@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="ultimos">
+          <h6>Ultimos articulos publicados:</h6>
+          <ul class="lista-ultimos">
+            {% for a in articulos %}
+              <li><a class="item-lista" href="{{a.get_absolute_url}}">
+                <img class="icono-flecha" src="{% static '/icons/svg/chevron-right.svg'%}">{{a.titulo}}
+              </a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="w-100 break"></div>
+      <div class="col-8 ultimo-articulo">
+        <div class="ultimo-titulo">{{ultimo.titulo}}</div>
+        <div class="ultimo-bajada">{{ultimo.bajada}} - {{ultimo.fecha_publicacion}}</div>
+        <div class="ultimo-cuerpo">{{ultimo.cuerpo|safe}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static '/css/all-posts.css' %}">
+<div class="div-titulo">
+  <h2 class="titulo">Resultados de la búsqueda</h2>
+</div>
+<div class="row">
+  <div class="col-2">
+  </div>
+  <div class="col-4 container">
+    <ul class="lista">
+      {% for a in object_list %}
+        <li><a class="item-lista" href="{{a.get_absolute_url}}">
+          <img class="icono-flecha" src="{% static '/icons/svg/chevron-right.svg'%}">
+          {{a.titulo}} - <span class="fecha">{{a.fecha_publicacion.date}}</span>
+        </a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-6"></div>
+</div>
+
+{% endblock %}

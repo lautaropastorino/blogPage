@@ -1,0 +1,20 @@
+.articulo {
+  font-family: Staatliches;
+  border-right: 1px dashed var(--inside-color);
+  padding-bottom: 3%;
+  color: var(--post-color);
+}
+
+.titulo {
+  font-size: 50px;
+  margin-bottom: 1%;
+}
+
+.bajada {
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+.cuerpo {
+  font-family: Patua-One;
+}

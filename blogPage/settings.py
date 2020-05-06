@@ -13,7 +13,9 @@ SECRET_KEY = '8m=3t)%u=slz4k55xgha9sdyics1knk1itkhimfio&*)+b4wf2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'lautaropastorino.pythonanywhere.com/',
+]
 
 
 # Application definition

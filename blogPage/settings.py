@@ -14,7 +14,7 @@ SECRET_KEY = '8m=3t)%u=slz4k55xgha9sdyics1knk1itkhimfio&*)+b4wf2'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'lautaropastorino.pythonanywhere.com/',
+    'lautaropastorino.pythonanywhere.com',
 ]
 
 

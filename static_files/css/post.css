@@ -1,20 +1,48 @@
 .articulo {
   font-family: Staatliches;
-  border-right: 1px dashed var(--inside-color);
   padding-bottom: 3%;
   color: var(--post-color);
+  margin-left: 3%;
+  width: 97%;
 }
 
 .titulo {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 1%;
 }
 
 .bajada {
   font-size: 20px;
+}
+
+.fecha {
   margin-bottom: 3%;
 }
 
 .cuerpo {
   font-family: Patua-One;
+}
+
+.formulario {
+  border-top: 1px dashed var(--inside-color);
+  padding-top: 3%;
+}
+
+.form {
+  margin-left: 3%;
+  width: 97%;
+}
+
+@media (min-width: 900px) {
+  .titulo {
+    font-size: 50px;
+  }
+  .articulo {
+    width: 67%;
+    border-right: 1px dashed var(--inside-color);
+  }
+  .formulario {
+    width: 30%;
+  }
+
 }

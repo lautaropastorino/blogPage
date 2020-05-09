@@ -4,10 +4,10 @@ from django_extensions.db.fields import AutoSlugField
 
 class Post(models.Model):
     titulo = models.CharField(max_length=50)
-    bajada = models.CharField(max_length=100)
     cuerpo = models.TextField()
+    autor = models.ForeignKey("Autor", on_delete=models.PROTECT)
     fecha_publicacion = models.DateTimeField()
-    slug = AutoSlugField(max_length=50, unique=True, populate_from=('titulo', 'bajada'))
+    slug = AutoSlugField(max_length=50, unique=True, populate_from=('titulo', 'autor__nombre'))
 
     def __str__(self):
         return self.titulo
@@ -17,3 +17,12 @@ class Post(models.Model):
         return reverse("posteos:posts", kwargs={
             "slug": self.slug,
         })
+
+class Autor(models.Model):
+    nombre = models.CharField(max_length=200)
+    fehca_nacimiento = models.DateField()
+    lugar_nacimiento = models.CharField(max_length=200)
+    nacionalidad = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.nombre

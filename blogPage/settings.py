@@ -15,6 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'lautaropastorino.pythonanywhere.com',
+    '127.0.0.1',
 ]
 
 

@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-4">
         <div class="ultimos">
-          <h6>Ultimos articulos publicados:</h6>
+          <h6>Nuevos:</h6>
           <ul class="lista-ultimos">
             {% for a in articulos %}
               <li><a class="item-lista" href="{{a.get_absolute_url}}">
@@ -18,7 +18,6 @@
           </ul>
         </div>
       </div>
-      <div class="w-100 break"></div>
       <div class="col-8 ultimo-articulo">
         <div class="ultimo-titulo">{{ultimo.titulo}}</div>
         <div class="ultimo-bajada">{{ultimo.bajada}} - {{ultimo.fecha_publicacion}}</div>

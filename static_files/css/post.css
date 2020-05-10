@@ -1,6 +1,7 @@
 .articulo {
   font-family: Staatliches;
   padding-bottom: 3%;
+  padding-top: 3%;
   color: var(--post-color);
   margin-left: 3%;
   width: 97%;
@@ -11,13 +12,6 @@
   margin-bottom: 1%;
 }
 
-.bajada {
-  font-size: 20px;
-}
-
-.fecha {
-  margin-bottom: 3%;
-}
 
 .cuerpo {
   font-family: Patua-One;
@@ -44,5 +38,4 @@
   .formulario {
     width: 30%;
   }
-
 }

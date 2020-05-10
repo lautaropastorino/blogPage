@@ -24,13 +24,9 @@
   font-family: Patua-One;
 }
 
-.ultimo-bajada {
-  margin-bottom: 3%;
-}
-
 .icono-flecha {
   margin-right: 1%;
-  
+
 }
 
 .item-lista {
@@ -51,10 +47,6 @@
 
   .ultimo-titulo {
     font-size: 50px;
-  }
-  .ultimo-bajada {
-    font-size: 20px;
-    margin-bottom: 3%;
   }
   .lista-ultimos {
     padding-left: 10%;

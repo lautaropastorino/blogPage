@@ -12,15 +12,15 @@
           <ul class="lista-ultimos">
             {% for a in articulos %}
               <li><a class="item-lista" href="{{a.get_absolute_url}}">
-                <img class="icono-flecha" src="{% static '/icons/svg/chevron-right.svg'%}">{{a.titulo}}
+                <img class="icono-flecha" src="{% static '/icons/svg/chevron-right.svg'%}">{{a.titulo}} - {{a.autor.nombre}}
               </a></li>
             {% endfor %}
           </ul>
         </div>
       </div>
       <div class="col-8 ultimo-articulo">
+        <div class="ultimo-fecha">{{ultimo.fecha_publicacion}}</div>
         <div class="ultimo-titulo">{{ultimo.titulo}}</div>
-        <div class="ultimo-bajada">{{ultimo.bajada}} - {{ultimo.fecha_publicacion}}</div>
         <div class="ultimo-cuerpo">{{ultimo.cuerpo|safe}}</div>
       </div>
     </div>

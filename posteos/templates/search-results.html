@@ -14,7 +14,7 @@
       {% for a in object_list %}
         <li><a class="item-lista" href="{{a.get_absolute_url}}">
           <img class="icono-flecha" src="{% static '/icons/svg/chevron-right.svg'%}">
-          {{a.titulo}} - <span class="fecha">{{a.fecha_publicacion.date}}</span>
+          {{a.titulo}} - {{a.autor.nombre}} - <span class="fecha">{{a.fecha_publicacion.date}}</span>
         </a></li>
       {% endfor %}
     </ul>

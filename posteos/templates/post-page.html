@@ -3,11 +3,11 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/post.css' %}">
 <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet">
-  <div class="articulo">
-    <div class="titulo">{{object.titulo}}</div>
-    <div class="bajada">{{object.bajada}}</div>
+  <div class="col articulo">
     <div class="fecha">{{object.fecha_publicacion}}</div>
+    <div class="titulo">{{object.titulo}}</div>
     <div class="cuerpo">{{object.cuerpo|safe}}</div>
+    <div class="autor">{{object.autor.nombre}}</div>
   </div>
 <div class="formulario">
   <form class="form">

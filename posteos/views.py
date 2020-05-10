@@ -33,6 +33,6 @@ class SearchView(ListView):
     def get_queryset(self):
         query = self.request.GET.get('q')
         object_list = Post.objects.filter(
-            Q(titulo__icontains=query) | Q(cuerpo__icontains=query) | Q(bajada__icontains=query)
+            Q(titulo__icontains=query) | Q(cuerpo__icontains=query) | Q(autor__nombre__icontains=query)
         )
         return object_list

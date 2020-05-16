@@ -146,4 +146,4 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
     }
 
-django_heroku.settings(locals(databases=False))
+django_heroku.settings(locals(), databases=False)

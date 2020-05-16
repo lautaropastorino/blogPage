@@ -5,6 +5,7 @@ django-bootstrap4==1.1.1
 django-extensions==2.2.9
 django-js-asset==1.2.2
 django-tinymce4-lite==1.8.0
+gunicorn==20.0.4
 jsmin==2.2.2
 python-decouple==3.3
 pytz==2020.1

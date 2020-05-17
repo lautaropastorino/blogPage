@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
   <a class="navbar-brand" href="/">BlogPage</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><img class="menu-icon" src="{% static '/icons/svg/menu.svg' %}"></span>
+    <span class="navbar-toggler-icon"><img class="menu-icon" src="{% static 'icons/svg/menu.svg' %}"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -12,7 +12,7 @@
         <a class="nav-link" href="/post-list">Todos los posts <span class="sr-only">(current)</span></a>
       </li>
       <li class="dark-toggler">
-        <a href="#-1"><img class="moon-icon" src="{% static '/icons/svg/moon.svg' %}"></a>
+        <a href="#-1"><img class="moon-icon" src="{% static 'icons/svg/moon.svg' %}"></a>
       </li>
   </ul>
   <form class="form-inline my-2 my-lg-0" action="{% url 'posteos:search-results' %}" method="get">
@@ -30,14 +30,14 @@
       root.style.setProperty("--inside-color-2", "#5E345E");
       root.style.setProperty("--background-color", "#fff");
       root.style.setProperty("--post-color", "#000");
-      $(".moon-icon").attr("src","{% static '/icons/svg/moon.svg' %}");
+      $(".moon-icon").attr("src","{% static 'icons/svg/moon.svg' %}");
       dark_theme = false;
     } else {
       root.style.setProperty("--inside-color", "#fff");
       root.style.setProperty("--inside-color-2", "#39E365");
       root.style.setProperty("--background-color", "#34495E");
       root.style.setProperty("--post-color", "#fff");
-      $(".moon-icon").attr("src","{% static '/icons/svg/sun.svg' %}");
+      $(".moon-icon").attr("src","{% static 'icons/svg/sun.svg' %}");
       dark_theme = true;
     }
   })

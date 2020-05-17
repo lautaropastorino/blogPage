@@ -1,0 +1,9 @@
+Leé lo último de {{autor}}!
+
+"{{titulo}}" ya está disponible para que lo leas
+
+Visitalo haciendo click acá https://voxpopuli-virtual.herokuapp.com/{{url}}
+
+Entrá a https://chaskiboomfest.com para seguir de cerca el arte y la cultura barilochense.
+
+Vox Populi

@@ -31,6 +31,9 @@
 </div>
 <script src="{% static 'scripts/registrar_mail.js' %}"></script>
 <script>
+  $(".form").submit(function(e){
+        e.preventDefault();
+    });
   $(".button-background").bind("click", function () {
     $.ajax({
             type: 'POST',

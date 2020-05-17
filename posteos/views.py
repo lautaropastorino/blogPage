@@ -19,13 +19,19 @@ def homepage(request):
 
 def registrar_mail(request):
     import json
+    from django.core.exceptions import ValidationError
+    from django.core.validators import validate_email
     body = request.body  #POST DATA
     email = json.loads(body)["mail"] #Leo desde json
-    obj, created  = Mail.objects.get_or_create(direccion=email)
-    if created:
-        data = {"exito": True, "mensaje": "Dirección registrada correctamente"}
-    else:
-        data = {"exito": False, "mensaje": "La direccion ya estaba registrada"}
+    try:
+        validate_email(email)
+        obj, created  = Mail.objects.get_or_create(direccion=email)
+        if created:
+            data = {"exito": True, "mensaje": "Dirección registrada correctamente"}
+        else:
+            data = {"exito": False, "mensaje": "La direccion ya estaba registrada"}
+    except ValidationError as e:
+        data = {"exito": True, "mensaje": f"Error en la dirección ingresada: {e.message}"}
     return JsonResponse(data)
 
 class PostView(DetailView):

@@ -1,0 +1,24 @@
+footer {
+  border-top: 1px dashed var(--inside-color);
+  height: 5%;
+}
+
+.footer-content {
+  margin-top: 1%;
+  font-family: Patua-One;
+  text-align: center;
+}
+
+.icono {
+  width: 50px;
+  margin-bottom: 1%;
+  color: var(--inside-color);
+  /*filter: invert(25%) sepia(32%) saturate(548%) hue-rotate(168deg) brightness(97%) contrast(91%);*/
+}
+
+
+.creditos {
+  font-family: Patua-One;
+  text-align: center;
+  font-size: 10px;
+}

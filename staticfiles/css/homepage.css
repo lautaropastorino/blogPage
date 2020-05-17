@@ -1,0 +1,58 @@
+.contenedor {
+  padding: 3%;
+}
+
+.ultimos {
+  border: 1px dashed var(--inside-color);
+  font-family: Patua-One;
+  color: var(--inside-color);
+  padding: 3%;
+}
+
+.lista-ultimos {
+  overflow: auto;
+  list-style-type: none;
+  padding-left: 3px;
+}
+
+.ultimo-articulo {
+  color: var(--post-color);
+  font-family: Staatliches;
+}
+
+.ultimo-cuerpo {
+  font-family: Patua-One;
+}
+
+.icono-flecha {
+  margin-right: 1%;
+}
+
+.item-lista {
+  text-decoration: none;
+  color: var(--inside-color);
+  transition: color 0.5s linear;
+}
+
+.item-lista:hover {
+  color: var(--inside-color-2);
+}
+
+.ultimo-titulo {
+  font-size: 25px;
+}
+
+.ultimo-autor {
+  margin-top: 4%;
+}
+
+@media (min-width: 900px) {
+
+  .ultimo-titulo {
+    font-size: 50px;
+  }
+  .lista-ultimos {
+    padding-left: 5%;
+  }
+
+}

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" href="{% static '/css/all-posts.css' %}">
+<link rel="stylesheet" href="{% static 'css/all-posts.css' %}">
 <div class="div-titulo">
   <h2 class="titulo">Todos los posts hasta el momento</h2>
 </div>
@@ -11,7 +11,7 @@
       <ul class="lista">
         {% for a in object_list %}
           <li><a class="item-lista" href="{{a.get_absolute_url}}">
-            <img class="icono-flecha" src="{% static '/icons/svg/chevron-right.svg'%}">
+            <img class="icono-flecha" src="{% static 'icons/svg/chevron-right.svg'%}">
             {{a.titulo}} - {{a.autor.nombre}} - <span class="fecha">{{a.fecha_publicacion.date}}</span>
           </a></li>
         {% endfor %}

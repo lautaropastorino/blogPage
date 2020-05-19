@@ -1,3 +1,8 @@
+.centrado {
+  margin: auto;
+  width: 50%;
+}
+
 .formulario {
   border-top: 1px dashed var(--inside-color);
   padding-top: 3%;

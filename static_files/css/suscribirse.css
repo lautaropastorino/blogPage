@@ -1,11 +1,12 @@
 .centrado {
   margin: auto;
-  width: 50%;
+  width: 80%;
 }
 
+
 .formulario {
-  border-top: 1px dashed var(--inside-color);
-  padding-top: 3%;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 .form {
@@ -15,9 +16,8 @@
 }
 
 .form-title {
-  margin: auto;
   font-family: Staatliches;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 3%;
   color: var(--post-color);
 }

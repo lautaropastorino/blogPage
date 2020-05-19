@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/suscribirse.css' %}">
+{% block content %}
+<div class="container">
+  <div class="centrado">
+    <div class="formulario">
+      <form class="form" method="POST">
+        {% csrf_token %}
+        <div class="form-title">
+          Recibir notificaciones de publicaciones
+        </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="email-lbl">Dirección de Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar email">
+        <small id="emailHelp" class="form-text text-muted">Te enviaremos un email cuando se realice una publicación.</small>
+      </div>
+      <button type="button" class="btn btn-primary button-background">Suscribirse</button>
+    </form>
+    </div>
+    <div class="mensaje-exito" hidden>
+      Mail registrado con éxito!
+    </div>
+    <div class="mensaje-fallo" hidden>
+      Falló el registro del mail, inténtelo más tarde.
+    </div>
+  </div>
+</div>
+<script src="{% static 'scripts/registrar_mail.js' %}"></script>
+<script>
+  $(".form").submit(function(e){
+        e.preventDefault();
+    });
+  $(".button-background").bind("click", function () {
+    $.ajax({
+            type: 'POST',
+            url: "{% url 'posteos:registrar_mail' %}",
+            data: JSON.stringify({
+                "mail": $('#exampleInputEmail1').val(),
+            }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+              $(".mensaje-exito").text(data.mensaje);
+              $(".mensaje-exito").attr("hidden", false);
+            },
+            fail:  (function() {
+              $(".mensaje-fallo").attr("hidden", false);
+            }),
+            });
+  })</script>
+{% endblock %}

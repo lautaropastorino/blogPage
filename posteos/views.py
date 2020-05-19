@@ -17,6 +17,9 @@ def homepage(request):
     except IndexError:
         return render(request, "homepage.html")
 
+def suscribirse(request):
+        return render(request, "suscribirse.html")
+
 def registrar_mail(request):
     import json
     from django.core.exceptions import ValidationError

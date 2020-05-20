@@ -8,7 +8,6 @@
   }
 
   .lista {
-    list-style: none;
     padding: 1em;
   }
 }
@@ -22,15 +21,19 @@
     margin-top: 5%;
     margin-bottom: 3%;
     font-family: Patua-One;
-    margin-left: 3%;
+    margin-left: 5%;
     padding: 3%;
-    width: 94%;
+    width: 90%;
   }
 
   .next-col {
     display: none;
   }
 
+}
+
+.lista {
+  list-style: none;
 }
 
 .item-lista {

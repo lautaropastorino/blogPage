@@ -1,0 +1,25 @@
+.centrado {
+  margin: auto;
+  width: 80%;
+  margin-top: 5%;
+  font-family: Patua-One;
+  color: var(--post-color);
+  border: 1px dashed var(--inside-color);
+  padding: 3%;
+}
+
+.titulo {
+  font-family: Staatliches;
+  font-size: 25px;
+  color: var(--inside-color);
+}
+
+/* Mantener footer abajo */
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+footer{
+  margin-top:auto;
+}

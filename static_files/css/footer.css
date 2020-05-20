@@ -12,7 +12,6 @@ footer {
 .icono {
   width: 50px;
   margin-bottom: 1%;
-  color: var(--inside-color);
   /*filter: invert(25%) sepia(32%) saturate(548%) hue-rotate(168deg) brightness(97%) contrast(91%);*/
 }
 
@@ -21,4 +20,5 @@ footer {
   font-family: Patua-One;
   text-align: center;
   font-size: 10px;
+  color: var(--inside-color);
 }

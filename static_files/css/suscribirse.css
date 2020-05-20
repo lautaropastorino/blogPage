@@ -48,3 +48,13 @@
   margin-left: 3%;
   margin-bottom: 1%;
 }
+
+/* Mantener footer abajo */
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+footer{
+  margin-top:auto;
+}

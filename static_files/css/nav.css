@@ -8,12 +8,7 @@ nav {
   .navbar-brand,  .nav-link{
     font-size: 15px;
     color: var(--inside-color);
-    border-bottom: 3px solid var(--background-color);
     padding-bottom: 1px;
-  }
-
-  .nav-link {
-    width: 35%;
   }
 
   .busqueda {
@@ -22,8 +17,7 @@ nav {
   }
 
   .navbar-brand:hover, .nav-link:hover{
-    color: var(--inside-color);
-    border-bottom: 3px solid var(--inside-color-2);
+    color: var(--inside-color-2);
   }
 }
 

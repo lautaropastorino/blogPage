@@ -10,4 +10,5 @@ urlpatterns = [
     path("search-results/", views.SearchView.as_view(), name="search-results"),
     path("registrar_mail", views.registrar_mail, name="registrar_mail"),
     path("suscribirse/", views.suscribirse, name="suscribirse"),
+    path("enviar_mi_contenido/", views.enviar_mi_contenido, name="enviar_mi_contenido"),
 ]

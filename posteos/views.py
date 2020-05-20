@@ -20,6 +20,9 @@ def homepage(request):
 def suscribirse(request):
         return render(request, "suscribirse.html")
 
+def enviar_mi_contenido(request):
+        return render(request, "enviar_mi_contenido.html")
+
 def registrar_mail(request):
     import json
     from django.core.exceptions import ValidationError
